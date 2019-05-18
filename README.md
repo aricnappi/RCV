@@ -5,7 +5,7 @@ A Java implementation of a ranked-choice voting algorithm.
 My state, Maine, has voted to implement ranked-choice voting (i.e. instant runoff) for certain state and federal elections. I thought the algorithm was cool and so I wanted to create a program that implements that algorithm.
 
 ## Algorithm
-This is an implementation of the algorithm used in ranked-choice/instant runoff voting. It follows Robert's rules of order, albeit slightly generalized to account for edge cases that occur when there is a small number of ballots.
+This is an implementation of the algorithm used in ranked-choice/instant runoff voting. It follows [Robert's rules of order](https://www.fairvote.org/rcv_and_robert_s_rules_of_order), albeit slightly generalized to account for edge cases that occur when there is a small number of ballots.
 
 The idea is that, given a list of candidates, you rank them in order of preference. For example, if you are voting for President, your choices might be 'Mr. Red', 'Mrs. Blue', 'Ms. Green', and 'Dr. Yellow'. You would then select your first choice candidate for President, then your second choice, third choice, and fourth choice. Your ballot is then submitted and the results are tabulated based on all submitted ballots.
 
