@@ -12,18 +12,19 @@ The idea is that, given a list of candidates, you rank them in order of preferen
 The algorithm goes through all of the ballots and sorts them into piles based on their first-choice candidate. If your first choice was Ms. Green, your ballot would be placed into Ms. Green's pile. Then the candidate whose pile has the smallest number of ballots is eliminated. In the next round, the ballots are then redistributed to the other piles according to their second-choice candidate. This process continues through several rounds until there is only one pile left. The candidate to whom this pile belongs is the winner.
 
 ## How to Use
-Record the ballots you want to use in the rawBallots.csv file in the resources folder. The first line should list the names of all of the candidates (comma-separated). The next line should be blank, and all following lines should have the ranked choices for each ballot on a separate line. For example, the following is valid.
+Record the ballots you want to use in the rawBallots.csv file in the resources folder. The first line should list the names of all of the candidates (comma-separated). The next line should be blank, and all following lines should have the ranked choices for each ballot on a separate line. For example, the following is valid where the candidate names are A, B, C, and D. You can have as many candidates as you want and ballots do not have to rank all candidates.
 
 ```
 A,B,C,D
 
 A,B,C,D
-A,B,C,D
+A,C,D
+B,A,C
 B,A,C,D
 B,A,C,D
-B,A,C,D
+D
 C,B,A,D
-C,A,B,D
+C,A,D
 D,A,B,C
 ```
 
