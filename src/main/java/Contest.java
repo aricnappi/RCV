@@ -1,6 +1,3 @@
-
-// TODO: write tests for this class
-
 import java.util.*;
 
 /**
